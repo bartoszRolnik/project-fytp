@@ -1,0 +1,144 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.road {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("street.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative; 
+
+  
+}
+
+.title{
+  text-align: center;
+  color: white;
+  font-size: 100px;
+  padding-top: 75px;
+  
+}
+
+.introduction{
+  font-size: 50px;
+  color: white;
+  text-align: center;
+  padding: 50px;
+}
+
+.test{
+  color: white;
+  direction: none;
+}
+.test:hover
+{
+     color:gray; 
+     text-decoration:none; 
+     cursor:pointer;  
+}
+
+.headerButton {
+  width: 300px;
+  height: 120px;
+  background-color: rgba(0,0,0,.5);
+  font-size: 20px;
+  position: absolute;
+  left: calc(50% - 150px);
+  font-size: 50px;
+  border-radius: 20px;
+  color:white;
+  border: 4px solid white;
+  
+}
+
+.container{
+  position: relative;
+  z-index: 1;
+  /* background-image: url("street.png");
+  background-color: rgba(0,0,0,0.6);
+  background-blend-mode: multiply; */
+  
+}
+
+.container::before{
+  content: url("street.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: -70px;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+.titleSection2, .titleSection3{
+  color: black;
+  font-size: 40px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.containerFormAboutYou{
+  width: 50vw;
+  
+}
+
+.aboutYou{
+margin-top: 10px;
+  box-sizing: border-box;
+  width: 85vw;
+}
+
+
+.labelAboutYou{
+  margin-top: 10px;
+  font-size: 20px
+}
+
+#section2, #section3{
+  height: 100vh;
+}
+
+
+.NextButton {
+  width: 150px;
+  height: 60px;
+  background-color: rgba(0,0,0,.5);
+  font-size: 25px;
+  border-radius: 20px;
+  color:white;
+  border: 4px solid white;
+  display: block;
+  margin: 0 auto;
+}
+
+.location-search-input{
+  margin: 50px 450px;
+}
